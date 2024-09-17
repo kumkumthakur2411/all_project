@@ -10,25 +10,89 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: rgb(121, 117, 81);
+    background-color: rgba(51, 2, 2, 0.815);
     display:flex;
+    position: relative;
 }
 #part1{
     height: 100%;
     width: 20%;
-    background-color: blueviolet;
-    
+    /* background-color: blueviolet; */
 }
 #part2{
+    background-image: url(https://plus.unsplash.com/premium_photo-1673757121102-0ca51260861f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     height: 100%;
     width:65%;
-    background-color: rgb(95, 18, 18);
-    background-image: url();
+    background-color: rgb(95, 18, 18);    
     background-size: cover;
     background-position: center;
+    position: relative;
+   
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* z-index: 1; */
+    background-color: rgba(61, 30, 30, 0.445);
 }
 #part3{
     height: 100%;
     width: 15%;
-    background-color: rgb(22, 146, 63);
+}
+#text-div{
+    height: 50%;
+    width: 60%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    /* background-color: brown; */
+    /* font-size: 35px; */
+    /* font-weight: 900; */
+}
+#text-div>h1{
+    font-size: 110px;
+    line-height: 85px;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    color: rgb(237, 238, 228);
+}
+#top-img{
+    top: 40%;
+    right:5%;
+    height: 35%;
+    width: 20%;
+    background-image: url(https://media.istockphoto.com/id/2165375088/photo/makeup-beauty-and-face-of-indian-woman-for-skincare-facial-or-wellness-treatment-or.jpg?s=1024x1024&w=is&k=20&c=SrQXyaV2ZxkGkLf6p4dGbOoq1SfExX_XM5f7FfRgIm0=);
+    /* background-color: aqua; */
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+#vertical-text{
+    position: absolute;
+    transform: rotate(90deg);
+    right: -39%;
+    transform-origin: 0% 0%;
+
+}
+#vertical-text h1{
+    font-size: 65px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: blanchedalmond;
+    color: transparent;   
+}
+#nav{
+    position: absolute;
+    width: 100%;
+    /* background-color: aqua; */
+    z-index: 4;
+    padding: 3%;
+    
+}
+#nav>h1{
+    font-size: 25px;
+    color: antiquewhite;
 }
